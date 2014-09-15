@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ChatUser" representedClassName="ChatUser" parentEntity="PersonBase" syncable="YES">
+        <attribute name="draft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unReadCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="unReceiveScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="unSendCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="lastMsg" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="target" inverseEntity="Message" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media_duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media_size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media_thumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showTime" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid_from" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid_to" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatUser" inverseName="lastMsg" inverseEntity="ChatUser" syncable="YES"/>
+    </entity>
+    <entity name="PersonBase" representedClassName="PersonBase" syncable="YES">
+        <attribute name="avater" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Message" positionX="-63" positionY="-18" width="128" height="253"/>
+        <element name="ChatUser" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="PersonBase" positionX="-36" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

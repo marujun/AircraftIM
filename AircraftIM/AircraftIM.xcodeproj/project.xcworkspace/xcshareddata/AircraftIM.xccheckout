@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7235E597-A40D-4977-A713-021DB2543B76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AircraftIM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35A2CCA6-544E-45B0-B377-AB4A07AC6667</key>
+		<string>ssh://github.com/marujun/AircraftIM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AircraftIM/AircraftIM.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35A2CCA6-544E-45B0-B377-AB4A07AC6667</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/marujun/AircraftIM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35A2CCA6-544E-45B0-B377-AB4A07AC6667</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35A2CCA6-544E-45B0-B377-AB4A07AC6667</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AircraftIM</string>
+		</dict>
+	</array>
+</dict>
+</plist>
