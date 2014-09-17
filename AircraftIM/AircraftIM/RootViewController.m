@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [XmppManager loginWithUsername:@"18612191103" password:@"111111"];
 }
 
 - (void)didReceiveMemoryWarning

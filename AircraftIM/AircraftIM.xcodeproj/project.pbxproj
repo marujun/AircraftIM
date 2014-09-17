@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9212C119C92FC000C24C68 /* XmppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9212C019C92FC000C24C68 /* XmppManager.m */; };
+		0A9212C319C9323300C24C68 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212C219C9323300C24C68 /* libxml2.dylib */; };
+		0A9212C519C9324100C24C68 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212C419C9324100C24C68 /* libz.dylib */; };
+		0A9212C719C9326100C24C68 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212C619C9326100C24C68 /* libiconv.dylib */; };
+		0A9212C919C9326E00C24C68 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212C819C9326E00C24C68 /* AddressBook.framework */; };
+		0A9212CB19C9327E00C24C68 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212CA19C9327E00C24C68 /* libstdc++.dylib */; };
+		0A9212CD19C9329000C24C68 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9212CC19C9329000C24C68 /* libresolv.dylib */; };
 		0ACC289A19C684CF00E322FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACC289919C684CF00E322FC /* Foundation.framework */; };
 		0ACC289C19C684CF00E322FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACC289B19C684CF00E322FC /* CoreGraphics.framework */; };
 		0ACC289E19C684CF00E322FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACC289D19C684CF00E322FC /* UIKit.framework */; };
@@ -75,6 +82,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9212BF19C92FC000C24C68 /* XmppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmppManager.h; sourceTree = "<group>"; };
+		0A9212C019C92FC000C24C68 /* XmppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmppManager.m; sourceTree = "<group>"; };
+		0A9212C219C9323300C24C68 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0A9212C419C9324100C24C68 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0A9212C619C9326100C24C68 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		0A9212C819C9326E00C24C68 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0A9212CA19C9327E00C24C68 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		0A9212CC19C9329000C24C68 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		0ACC289619C684CF00E322FC /* AircraftIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AircraftIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACC289919C684CF00E322FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ACC289B19C684CF00E322FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -256,6 +271,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9212CD19C9329000C24C68 /* libresolv.dylib in Frameworks */,
+				0A9212CB19C9327E00C24C68 /* libstdc++.dylib in Frameworks */,
+				0A9212C919C9326E00C24C68 /* AddressBook.framework in Frameworks */,
+				0A9212C719C9326100C24C68 /* libiconv.dylib in Frameworks */,
+				0A9212C519C9324100C24C68 /* libz.dylib in Frameworks */,
+				0A9212C319C9323300C24C68 /* libxml2.dylib in Frameworks */,
 				0ACC297619C6922500E322FC /* MobileCoreServices.framework in Frameworks */,
 				0ACC297419C6921800E322FC /* Security.framework in Frameworks */,
 				0ACC297219C6920F00E322FC /* CFNetwork.framework in Frameworks */,
@@ -305,6 +326,12 @@
 		0ACC289819C684CF00E322FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A9212CC19C9329000C24C68 /* libresolv.dylib */,
+				0A9212CA19C9327E00C24C68 /* libstdc++.dylib */,
+				0A9212C819C9326E00C24C68 /* AddressBook.framework */,
+				0A9212C619C9326100C24C68 /* libiconv.dylib */,
+				0A9212C419C9324100C24C68 /* libz.dylib */,
+				0A9212C219C9323300C24C68 /* libxml2.dylib */,
 				0ACC297519C6922500E322FC /* MobileCoreServices.framework */,
 				0ACC297319C6921800E322FC /* Security.framework */,
 				0ACC297119C6920F00E322FC /* CFNetwork.framework */,
@@ -696,6 +723,8 @@
 			children = (
 				0ACC29DC19C6975600E322FC /* SoundPlayer.h */,
 				0ACC29DD19C6975600E322FC /* SoundPlayer.m */,
+				0A9212BF19C92FC000C24C68 /* XmppManager.h */,
+				0A9212C019C92FC000C24C68 /* XmppManager.m */,
 				0ACC29D919C696ED00E322FC /* MessageManager.h */,
 				0ACC29DA19C696ED00E322FC /* MessageManager.m */,
 			);
@@ -862,6 +891,7 @@
 				0ACC28D119C6852300E322FC /* RootViewController.m in Sources */,
 				0ACC29DB19C696ED00E322FC /* MessageManager.m in Sources */,
 				0ACC29F119C6978D00E322FC /* RecordAudio.m in Sources */,
+				0A9212C119C92FC000C24C68 /* XmppManager.m in Sources */,
 				0ACC292919C685DD00E322FC /* NSManagedObject+Magic.m in Sources */,
 				0ACC294D19C68CC900E322FC /* Message.m in Sources */,
 				0ACC296419C68DF700E322FC /* NSDate+Common.m in Sources */,
@@ -1009,7 +1039,10 @@
 					"$(PROJECT_DIR)/AircraftIM/EaseMobSDK/lib",
 					"$(PROJECT_DIR)/AircraftIM/opencore-amr/lib",
 				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1028,7 +1061,10 @@
 					"$(PROJECT_DIR)/AircraftIM/EaseMobSDK/lib",
 					"$(PROJECT_DIR)/AircraftIM/opencore-amr/lib",
 				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
