@@ -28,5 +28,6 @@ typedef enum{
 + (XmppManager *)defaultManager;
 
 + (void)loginWithUsername:(NSString *)username password:(NSString *)password;
++ (void)logoff;
 
 @end

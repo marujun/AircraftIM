@@ -26,6 +26,8 @@ NSString *const kXmppConnectChangedNotification = @"kXmppConnectChangedNotificat
 {
     self = [super init];
     if (self) {
+        [MessageManager defaultManager];
+        
         // 监测网络情况
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(reachabilityChanged:)
@@ -75,6 +77,11 @@ NSString *const kXmppConnectChangedNotification = @"kXmppConnectChangedNotificat
              FLOG(@"登录失败 %@",error.description);
          }
      } onQueue:nil];
+}
+
++ (void)logoff
+{
+    [[EaseMob sharedInstance].chatManager asyncLogoff];
 }
 
 @end

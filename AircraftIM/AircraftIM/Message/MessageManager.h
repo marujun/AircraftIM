@@ -10,7 +10,9 @@
 #import "SoundPlayer.h"
 #import "RecordAudio.h"
 
-@interface MessageManager : NSObject
+extern NSString *const kNewMessageNotification;
+
+@interface MessageManager : NSObject <IChatManagerDelegate>
 
 @property (nonatomic, strong) SoundPlayer *vibratePlayer;
 @property (nonatomic, strong) SoundPlayer *soundPlayer;

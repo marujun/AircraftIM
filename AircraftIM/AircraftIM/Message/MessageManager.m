@@ -8,6 +8,8 @@
 
 #import "MessageManager.h"
 
+NSString *const kNewMessageNotification = @"kNewMessageNotification";
+
 @implementation MessageManager
 
 + (MessageManager *)defaultManager
@@ -26,9 +28,19 @@
     if (self) {
         _vibratePlayer = [SoundPlayer initVibratePlayer];
         _soundPlayer = [SoundPlayer initSystemPlayerWithFileName:@"sms-received1.caf"];
+        
+        // 注册一个delegate
+        [[EaseMob sharedInstance].chatManager addDelegate:self delegateQueue:nil];
     }
     return self;
 }
 
+
+// 实现接收消息的委托
+#pragma mark - IChatManagerDelegate
+-(void)didReceiveMessage:(EMMessage *)message
+{
+    FLOG(@"message %@",message);
+}
 
 @end
