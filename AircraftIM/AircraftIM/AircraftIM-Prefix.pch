@@ -15,8 +15,10 @@
     #import <Foundation/Foundation.h>
     #import "DataManager.h"
     #import "EaseMob.h"
+    #import "BUIView.h"
     #import "MacroToolHeader.h"
     #import "XmppManager.h"
+    #import "BaseTableCell.h"
 
     #import "NSObject+Common.h"
     #import "NSDate+Common.h"
@@ -25,4 +27,5 @@
     #import "UIDevice+Common.h"
     #import "UIImage+Common.h"
     #import "UIView+Common.h"
+    #import "UIView+AutoLayout.h"
 #endif

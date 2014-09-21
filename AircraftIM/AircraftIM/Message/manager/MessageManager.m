@@ -36,11 +36,39 @@ NSString *const kNewMessageNotification = @"kNewMessageNotification";
 }
 
 
-// 实现接收消息的委托
 #pragma mark - IChatManagerDelegate
+-(void)didSendMessage:(EMMessage *)message error:(EMError *)error;
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNewMessageNotification
+                                                            object:nil
+                                                          userInfo:@{@"send":message}];
+    });
+}
+
+// 实现接收消息的委托
 -(void)didReceiveMessage:(EMMessage *)message
 {
+    [_soundPlayer play];
+    [_vibratePlayer play];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNewMessageNotification
+                                                            object:message
+                                                          userInfo:@{@"receive":message}];
+    });
+    
     FLOG(@"message %@",message);
+}
+
+- (void)willReceiveOfflineMessages
+{
+    //@"开始接收离线消息"
+}
+
+- (void)didFinishedReceiveOfflineMessages:(NSArray *)offlineMessages
+{
+    //离线消息接收成功
 }
 
 @end

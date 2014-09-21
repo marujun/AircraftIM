@@ -18,9 +18,10 @@
 #define FLOG(str, args...) ((void)0)
 #endif
 
-
-#define IS_IPHONE_5 (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568) < DBL_EPSILON)
-#define IS_IOS_7 ([[UIDevice currentDevice].systemVersion floatValue] >= 7)
+#define ShortSystemVersion  [[UIDevice currentDevice].systemVersion floatValue]
+#define IS_IOS_6 (ShortSystemVersion < 7)
+#define IS_IOS_7 (ShortSystemVersion >= 7 && ShortSystemVersion < 8)
+#define IS_IOS_8 (ShortSystemVersion >= 8)
 #define radians(degrees)  (degrees)*M_PI/180.0f
 
 #define WINDOW_HEIGHT [[UIScreen mainScreen] bounds].size.height

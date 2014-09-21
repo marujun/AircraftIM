@@ -7,9 +7,12 @@
 //
 
 #import "RootViewController.h"
+#import "ChatListViewController.h"
 
 @interface RootViewController ()
-
+{
+    UINavigationController *rootNavigationController;
+}
 @end
 
 @implementation RootViewController
@@ -27,13 +30,26 @@
 {
     [super viewDidLoad];
     
-    [XmppManager loginWithUsername:@"18612191103" password:@"111111"];
+    ChatListViewController *listViewController = [[ChatListViewController alloc] initWithNibName:nil bundle:nil];
+    rootNavigationController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    
+    [self addChildViewController:rootNavigationController];
+    [self.view addSubview:rootNavigationController.view];
+    
+    rootNavigationController.interactivePopGestureRecognizer.delegate = self;
+    [rootNavigationController.view autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+    
+    [XmppManager loginWithUsername:@"18612191103"
+                          password:@"111111"
+                        completion:^(NSDictionary *loginInfo, EMError *error) {
+                            [listViewController refreshDataSource];
+                        }];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return YES;
 }
 
 @end
