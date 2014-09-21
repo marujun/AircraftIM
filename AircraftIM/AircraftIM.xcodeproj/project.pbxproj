@@ -82,6 +82,11 @@
 		0AD14ED919CEBDC0006D914D /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD14ED719CEBDC0006D914D /* SafariViewController.xib */; };
 		0AD14EDD19CEC71C006D914D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EDB19CEC71C006D914D /* ChatViewController.m */; };
 		0AD14EDE19CEC71C006D914D /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD14EDC19CEC71C006D914D /* ChatViewController.xib */; };
+		0AD14EE519CEEE13006D914D /* MessageBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EE419CEEE13006D914D /* MessageBaseTableCell.m */; };
+		0AD14EE819CEEE3E006D914D /* MessageTextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EE719CEEE3E006D914D /* MessageTextTableCell.m */; };
+		0AD14EEB19CEEE59006D914D /* MessageAudioTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EEA19CEEE59006D914D /* MessageAudioTableCell.m */; };
+		0AD14EEE19CEEE6E006D914D /* MessageImageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EED19CEEE6E006D914D /* MessageImageTableCell.m */; };
+		0AD14EF119CF0732006D914D /* MessageTimeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD14EF019CF0732006D914D /* MessageTimeTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +304,16 @@
 		0AD14EDA19CEC71C006D914D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		0AD14EDB19CEC71C006D914D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		0AD14EDC19CEC71C006D914D /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		0AD14EE319CEEE13006D914D /* MessageBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBaseTableCell.h; sourceTree = "<group>"; };
+		0AD14EE419CEEE13006D914D /* MessageBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageBaseTableCell.m; sourceTree = "<group>"; };
+		0AD14EE619CEEE3E006D914D /* MessageTextTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTextTableCell.h; sourceTree = "<group>"; };
+		0AD14EE719CEEE3E006D914D /* MessageTextTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTextTableCell.m; sourceTree = "<group>"; };
+		0AD14EE919CEEE59006D914D /* MessageAudioTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAudioTableCell.h; sourceTree = "<group>"; };
+		0AD14EEA19CEEE59006D914D /* MessageAudioTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAudioTableCell.m; sourceTree = "<group>"; };
+		0AD14EEC19CEEE6E006D914D /* MessageImageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageImageTableCell.h; sourceTree = "<group>"; };
+		0AD14EED19CEEE6E006D914D /* MessageImageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageImageTableCell.m; sourceTree = "<group>"; };
+		0AD14EEF19CF0732006D914D /* MessageTimeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTimeTableCell.h; sourceTree = "<group>"; };
+		0AD14EF019CF0732006D914D /* MessageTimeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTimeTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,6 +608,7 @@
 		0AD14E4419CEBB42006D914D /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				0AD14EE219CEEE13006D914D /* cell */,
 				0AD14EDA19CEC71C006D914D /* ChatViewController.h */,
 				0AD14EDB19CEC71C006D914D /* ChatViewController.m */,
 				0AD14EDC19CEC71C006D914D /* ChatViewController.xib */,
@@ -893,6 +909,23 @@
 			path = BlockUI;
 			sourceTree = "<group>";
 		};
+		0AD14EE219CEEE13006D914D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0AD14EE319CEEE13006D914D /* MessageBaseTableCell.h */,
+				0AD14EE419CEEE13006D914D /* MessageBaseTableCell.m */,
+				0AD14EEF19CF0732006D914D /* MessageTimeTableCell.h */,
+				0AD14EF019CF0732006D914D /* MessageTimeTableCell.m */,
+				0AD14EE619CEEE3E006D914D /* MessageTextTableCell.h */,
+				0AD14EE719CEEE3E006D914D /* MessageTextTableCell.m */,
+				0AD14EE919CEEE59006D914D /* MessageAudioTableCell.h */,
+				0AD14EEA19CEEE59006D914D /* MessageAudioTableCell.m */,
+				0AD14EEC19CEEE6E006D914D /* MessageImageTableCell.h */,
+				0AD14EED19CEEE6E006D914D /* MessageImageTableCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1010,22 +1043,27 @@
 				0AD14E4219CEBB37006D914D /* MatchParser.m in Sources */,
 				0ACC28D119C6852300E322FC /* RootViewController.m in Sources */,
 				0ACC292919C685DD00E322FC /* NSManagedObject+Magic.m in Sources */,
+				0AD14EE519CEEE13006D914D /* MessageBaseTableCell.m in Sources */,
 				0ACC294D19C68CC900E322FC /* Message.m in Sources */,
 				0AD14E3D19CEBB37006D914D /* UIDevice+Common.m in Sources */,
 				0AD14EDD19CEC71C006D914D /* ChatViewController.m in Sources */,
+				0AD14EE819CEEE3E006D914D /* MessageTextTableCell.m in Sources */,
 				0ACC292319C685DD00E322FC /* AFURLRequestSerialization.m in Sources */,
 				0ACC292B19C685DD00E322FC /* ChatUser+Extend.m in Sources */,
 				0ACC292719C685DD00E322FC /* CoreDataUtil.m in Sources */,
 				0AD14E5219CEBB42006D914D /* ChatListTableCell.m in Sources */,
 				0AD14E3E19CEBB37006D914D /* UIImage+Common.m in Sources */,
+				0AD14EEE19CEEE6E006D914D /* MessageImageTableCell.m in Sources */,
 				0ACC291F19C685DD00E322FC /* AFHTTPSessionManager.m in Sources */,
 				0ACC293A19C685DD00E322FC /* ImageCache.m in Sources */,
 				0ACC292019C685DD00E322FC /* AFNetworkReachabilityManager.m in Sources */,
 				0ACC292619C685DD00E322FC /* Reachability.m in Sources */,
 				0AD14E3919CEBB37006D914D /* NSDate+Common.m in Sources */,
+				0AD14EF119CF0732006D914D /* MessageTimeTableCell.m in Sources */,
 				0AD14ECD19CEBB49006D914D /* RecordAudio.m in Sources */,
 				0AD14E4019CEBB37006D914D /* UIView+Common.m in Sources */,
 				0ACC294719C68BB000E322FC /* models.xcdatamodeld in Sources */,
+				0AD14EEB19CEEE59006D914D /* MessageAudioTableCell.m in Sources */,
 				0AD14ED419CEBCE2006D914D /* BUIView.m in Sources */,
 				0AD14E3A19CEBB37006D914D /* NSObject+Common.m in Sources */,
 				0ACC292419C685DD00E322FC /* AFURLResponseSerialization.m in Sources */,

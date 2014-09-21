@@ -10,6 +10,8 @@
 
 @interface NSDate (Common)
 
++ (NSDate *)dateWithTimeStamp:(double)timestamp;
+
 //获取天数索引
 - (int)dayIndexSince1970;
 - (int)dayIndexSinceNow;

@@ -58,12 +58,7 @@
     NSString *ret = @"";
     EMMessage *lastMessage = [conversation latestMessage];;
     if (lastMessage) {
-        double timeInterval = lastMessage.timestamp;
-        if(timeInterval > 140000000000) {
-            timeInterval = timeInterval / 1000;
-        }
-        NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-        
+        NSDate *date = [NSDate dateWithTimeStamp:lastMessage.timestamp];
         ret = [date stringWithDateFormat:@"HH:mm"];
     }
     return ret;

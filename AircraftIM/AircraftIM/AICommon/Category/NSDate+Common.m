@@ -10,6 +10,14 @@
 
 @implementation NSDate (Common)
 
++ (NSDate *)dateWithTimeStamp:(double)timestamp
+{
+    if(timestamp > 140000000000) {
+        timestamp = timestamp / 1000;
+    }
+    return [NSDate dateWithTimeIntervalSince1970:timestamp];
+}
+
 //获取天数索引
 - (int)dayIndexSince1970
 {

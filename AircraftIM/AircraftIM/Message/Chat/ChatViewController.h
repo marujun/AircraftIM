@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ChatViewController : UIViewController
+{
+    __weak IBOutlet UITableView *_tableView;
+}
 
 @property (nonatomic, strong) EMConversation *conversation;
 

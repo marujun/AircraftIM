@@ -62,6 +62,7 @@
     [self refreshDataSource];
 }
 
+//加载数据源
 - (void)refreshDataSource
 {
     NSArray *conversations = [[EaseMob sharedInstance].chatManager conversations];
